@@ -15,7 +15,7 @@ categories: Linear Algebra
 
 ## 关于矩阵的导数
 
-https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-matrix
+[wiki](https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-matrix)
 
 ## Further
 
