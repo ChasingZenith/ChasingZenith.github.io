@@ -2,7 +2,7 @@
 
 ## 大数定律
 
-$P(|Q_n(A)-\theta| \gt \epsilon) \rightarrow 0$
+$$P(|Q_n(A)-\theta| \gt \epsilon) \rightarrow 0$$
 
 ## Hoeffding's Inequality
 
