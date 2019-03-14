@@ -2,10 +2,10 @@
 layout: post
 title:  "Dairy-to-remind-me-what-I-have-done"
 date:   2019-3-5 10:51:20 +0800
-categories: Linear Algebra
+categories: Dairy
 ---
 
-# 主要目的
+## 主要目的
 
 1. 记录学习生活，提高学习效率
 2. 留下参考资料，参考网站，以便以后查找。
@@ -76,7 +76,7 @@ categories: Linear Algebra
 1. 高斯变量可加性诀窍：配方法$u=x-s/2$
 2. 依概率收敛
 3. 又开始想 regularity condition 和sufficient statistic的关系，sufficient statistics有一副图，上面显示了关于A的导数为0
-4. 毕设：运行flow的tutorial01 发现conda 的虚拟环境下使用 *Jupyter notebook* 一定需要重新```pip install jupyter```
+4. 毕设：运行flow的tutorial01 发现conda 的虚拟环境下使用 *Jupyter notebook* 一定需要重新`pip install jupyter`才行
 
 ## Mar 11th
 
@@ -87,13 +87,37 @@ categories: Linear Algebra
 
 ## Mar 12th
 
-1. psudoinverse
+1. psudo-inverse for any square matrices
 2. locus的智能交通程序
 
 ## Mar 13th
 
 1. 关于样本方差$S_n=\frac{1}{n-1}\sum_{j=1}^{n}(X_j-\bar{X}_n)$中$n-1$的理解:$\bar{X}_n$与$X_j$不独立，由于$\bar{X}_n$会随着$n$个i.i.d.的样本的上浮和下浮产生同方向偏离$E(\bar{X})=\text{Var}(\bar{X}_n)=\sigma^2/n$，所以和$\sum(X_j-\mu)$相比方差要小。Jessica Hwang P254
 2. [ ] 极坐标转直角坐标积分
-3. Moment generate function the MGF of $X=\mu+\sigma Z - N(\mu, \sigma^2)$ is $M_X(t)=e^{\mu t+\frac{1}{2}\sigma^2t^2}$
-4. 早上上了凸优化的课 LP QP SOCP SDP
-5. FSSP 3.14
+3. Moment generate function 高阶导可求高阶矩
+4. the MGF of Gaussian distribution $X=\mu+\sigma Z - N(\mu, \sigma^2)$ is $M_X(t)=e^{\mu t+\frac{1}{2}\sigma^2t^2}$
+5. 早上上了凸优化的课 LP QP SOCP SDP
+6. FSSP 3.14
+
+## Mar 14th
+
+1. Antonio
+   1. ER graph
+   2. Power Law
+   3. Small word
+   4. gaint component
+   5. [ ] phase trasition
+   6. [ ] preferential attachment model
+   7. [ ] clusering coefficient
+   8. [ ] geometry distribution
+   9. [ ] poisson distribution
+2. FSSP HW 3.17 Appendix3D
+   1. >almost any WSS Gaussian random process $x[n]$ may be represented as the output of a causal linear shift invariant filter driven at the input by white Gaussian noise $u[n]$ $[Brockwell and Davis 1987]$ or $x[n]=\sum_{k=0}^\infin{h[k]u[n-k]}$, where $h[0]=1$
+   2. $r_{xx}[k]=\sigma_u^2\sum_{n=0}^\infty {h[n]h[n+k]}$
+   3. $C(\theta)=E[(x-\bar{x})(x-\bar{x})^T]=E[xx^T]=E[Huu^TH^T]=HE[uu^T]H^T=H\sigma_u^2IH^T=\sigma_u^2HH^T$
+   4. [ ] corelation time or effective duration of $r_{xx}[k]$ is the same as the impulse response length
+   5. [ ] uncorrelation versus independent
+   6. [x] $(H^T)^{-1}=(H^{-1})^{T}$. Proof:$(H^{-1})^{T}H^T=(HH^{-1})^T=I^T=I$, moreover, the inverse of a matrix is unique.
+   7. [ ] Approximately??
+   8. [ ] why not derivate the $|X(f)|$ term?
+   9. [ ] What is $Pxx(f)$ ?
