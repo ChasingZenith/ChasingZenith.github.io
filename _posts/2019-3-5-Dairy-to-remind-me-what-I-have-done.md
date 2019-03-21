@@ -82,8 +82,7 @@ categories: Dairy
 
 1. locua 的智能交通程序配置
 2. 学习奇异值分解
-3. 哄开心
-4. 凸优化
+3. 凸优化
 
 ## Mar 12th
 
@@ -121,3 +120,38 @@ categories: Dairy
    7. [ ] Approximately??
    8. [ ] why not derivate the $|X(f)|$ term?
    9. [ ] What is $Pxx(f)$ ?
+
+# Mar 18th
+
+1. 搭建了楼上的ubuntu环境
+2. 组会:主要完成的比较好的是 Fundamental of Statistical Signal Processing.凸优化上到了KKT条件,但是没有好好地理解.图论的课我一直有去上课,但是由于里面比较深入的部分用到了比较多的线性代数的知识,比如奇异值分解,奇异值向量.毕设方面我现在刚刚开题,还是想要好好地确定方向,想要知道现在实验室有没有什么主要的研究方向然后大家比较统一一点.
+3. 讨论中罗老师对于使用CNN会有问题产生了怀疑
+
+# Mar 19th
+
+1. 和罗老师讨论了关于毕设的东西,我和罗老师提到了想要把人工的提取道路的形状信息,把车的位置表示为车道上的$n$维向量信息,再使用神经网络求解优化分配和控制的问题.罗老师提到了使用CNN更加general,如果以后加入行人等等也可以直接处理,但我觉得这样也沦为直接使用CNN求解.
+2. 也制定了主要的毕设路线,打算把毕业论文,对机器学习和深度学习写学习总结,实验部分从KDD开始入手写起,如果有精力再加入flow中multi-agent的部分
+   1. 系统地学习机器学习理论
+   2. 系统学习深度学习,关于CNNRNN等等神经网络的理论.
+   3. 先把KDD论文,代码仔细看每个细节怎么实现的
+   4. flow-project一直跟进,学习multi-agent完成指挥如臂的目标
+3. 写第五章作业
+   1. [ ] Why should the likelihood function of $A$ is a constant function if there is no information from observation after $T(x)$ observed? Otherwise, we can use a maximum likelihood estimation method to estimate A?
+   2. [ ] chi-squared distribution
+   3. [ ] $E(x|y)=\int_{-\infty}^{\infty}$
+   4. [x] the PDF of $p(\textbf{x}, T(\textbf{x}))$ where $T(\textbf{x})$ is functionally dependent on $\textbf{x}$ can be written using Dirac delta function
+   5. [ ] proof for Neyman-Fisher Factorization theorem(Vector Parameter)
+   6. [ ] proof for RLBS theorem(Vector Parameter)
+
+# Mar 20th
+
+1. 装显卡
+2. 凸优化的课
+3. 做作业
+
+# Mar 21th
+
+1. Antonio
+2. 机器学习
+3. 做完了第五章作业
+   1. [ ] Rayleigh Distribution
