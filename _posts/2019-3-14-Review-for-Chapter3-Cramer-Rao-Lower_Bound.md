@@ -23,12 +23,12 @@ Intuitively, the "sharpness" of the likelihood function determines how accuratel
 
 It is assumed that the PDF $p(x;\theta)$ satisfies the "regularity" condition
 
-$$ E[\frac{\partial \ln p(\textbf{x};\theta)}{\partial\theta}]=0 \quad \textrm{for all } \theta \tag{3.6}$$
+$$ E\left[\frac{\partial \ln p(\textbf{x};\theta)}{\partial\theta}\right]=0 \quad \textrm{for all } \theta \tag{3.6}$$
 
 where the expectation is taken with respect to $p(\textbf{x};\theta)$.
 The expectation above is expicitly given by
 
-$$ E[\frac{\partial^2 \ln p(\mathbf{x};\theta)}{\partial\theta^2}]=\int\frac{\partial^2 \ln p(\mathbf{x};\theta)}{\partial\theta^2} p(\mathbf{x};\theta) \, \mathrm{d}x $$
+$$ E\left[\frac{\partial^2 \ln p(\mathbf{x};\theta)}{\partial\theta^2}\right]=\int\frac{\partial^2 \ln p(\mathbf{x};\theta)}{\partial\theta^2} p(\mathbf{x};\theta) \, \mathrm{d}x $$
 
 since the second derivation is a random variable deandent on $\mathbf{x}$
 Then, the variance of any unbiased estimator $\hat{\theta}$ must satisfy
@@ -70,7 +70,7 @@ The depandence of the signal on $\theta$ is explicitly noted.
 
 We will have
 
-$$ \textsf{var}(\hat{\theta})\ge\frac{\sigma^2}{\sum_{n=0}^{N-1}(\frac{\partial s[n;\theta]}{\partial \theta})^2} $$
+$$ \textsf{var}(\hat{\theta})\ge\frac{\sigma^2}{\sum_{n=0}^{N-1}\left( \frac{\partial s[n;\theta]}{\partial \theta} \right)^2} $$
 
 The form of the bound demonstrates the importance of the signal dependence of $\theta$. Signals that change rapidly as the unknown parameter changes result in accurate estimators.
 
@@ -88,12 +88,12 @@ The efficiency of an estimator is **destroyed by a nonlinear transormation**. Al
 
 It is assumed that the PDF $p(\mathbf{x};\mathbf{\theta})$ satisfies the "regularity" condition
 
-$$ E[\frac{\partial \ln p(\textbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}}]=0 \quad \textrm{for all } \mathbf{\mathbf{\theta}} $$
+$$ E\left[\frac{\partial \ln p(\textbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}}\right]=0 \quad \textrm{for all } \mathbf{\mathbf{\theta}} $$
 
 where the expectation is taken with respect to $p(\textbf{x};\mathbf{\theta})$.
 The expectation above is expicitly given by
 
-$$ E[\frac{\partial^2 \ln p(\mathbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}^2}]=\int\frac{\partial^2 \ln p(\mathbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}^2} p(\mathbf{x};\mathbf{\theta}) \, \mathrm{d}x $$
+$$ E\left[\frac{\partial^2 \ln p(\mathbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}^2}\right]=\int\frac{\partial^2 \ln p(\mathbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}^2} p(\mathbf{x};\mathbf{\theta}) \, \mathrm{d}x $$
 
 since the second derivation is a random variable deandent on $\mathbf{x}$
 Then, the **co-variance matrix** of any unbiased estimator $\hat{\mathbf{\theta}}$ must satisfy
@@ -120,9 +120,9 @@ $$ \textnormal{var}(\mathbf{\theta})=[\mathbf{C}_{\mathbf{\hat{\theta}}}]_{ii} \
 
 If the equality conditions hold, the reader may ask whether we can be assured that $\mathbf{\hat{\theta}}$ is unbiased. Because the regularity conditions
 
-$$ E[\frac{\partial \ln p(\textbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}}]=0 \quad \textrm{for all } \mathbf{\mathbf{\theta}} $$
+$$ E\left[\frac{\partial \ln p(\textbf{x};\mathbf{\theta})}{\partial\mathbf{\theta}}\right]=0 \quad \textrm{for all } \mathbf{\mathbf{\theta}} $$
 
-are always assumed to hold, we can apply them to $(3.25)$. This then yields $E[\mathbf{g(x)}=E[\mathbf{\hat{\theta}}]=\mathbf{\theta}$.
+are always assumed to hold, we can apply them to $(3.25)$. This then yields $E\left[\mathbf{g(x)}\right]=E[\mathbf{\hat{\theta}}]=\mathbf{\theta}$.
 
 **The bound will depend on $\mathbf{\theta}$ in general.**
 
@@ -130,7 +130,7 @@ are always assumed to hold, we can apply them to $(3.25)$. This then yields $E[\
 
 Assume that it is desired to estimate $\mathbf{\alpha}= \mathbf{g(\theta)}$ for $\mathbf{g}$, an $r$-dimension function. Then
 
-$$ \mathbf{C_{\hat{\alpha}}} - \frac{\partial\mathbf{g(\theta)}}{\partial\mathbf{\theta}}\mathbf{I}^{-1}(\mathbf{\theta}){\frac{\partial\mathbf{g(\theta)}}{\partial\theta}}^T \ge \mathbf{0} \tag{3.30}$$
+$$ \mathbf{C_{\hat{\alpha}}} - \frac{\partial\mathbf{g(\theta)}}{\partial\mathbf{\theta}}\mathbf{I}^{-1}(\mathbf{\theta}){\frac{\partial\mathbf{g(\theta)}}{\partial\theta}}^T \ge \mathbf{0} \tag{3.30} $$
 
 where, $\ge \mathbf{0}$ is to be interreted as positive semidefinite. In $(3.30)$, $\partial\mathbf{g(\theta)}/\partial\mathbf{\theta}$ is the $r\times p$ **Jacobian matrix** defined as
 
@@ -178,3 +178,7 @@ $E(\check{\theta}|T(\textbf{x})$ is solely a function of the sufficient statisti
 
 Find some function $g$ so that $\hat{\theta}=g(T)$ is an unbiased estimator of $A$.
 
+
+## Chapter 7 MLE
+
+$p(x ; \theta)=g\left(T,(x), T_{2}(x), \cdots, T_{n}(x), \theta\right) \underbrace{h(x)}_{\text{suppose is possitive}}$

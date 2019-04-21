@@ -16,7 +16,12 @@ categories: Dairy
 ## Mar 3th, 2019
 
 1. 多维正态分布---Jessca Hwang Introduction to Probability
-   1. todo: 还是不明白其$p(x)=\frac{1}{(2\pi)^{N/2}\det^{1/2}{C}}\exp(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})^TC^{-1}(\boldsymbol{x}-\boldsymbol{\mu}))$是怎么来的
+   1. todo: 还是不明白其$p(x)=\frac{1}
+   {(2\pi)^{N/2}\det^{1/2}{C}}
+   \exp(
+       -\frac{1}{2}
+       (\boldsymbol{x}-\boldsymbol{\mu})^TC^{-1}(\boldsymbol{x}-\boldsymbol{\mu})
+       )$是怎么来的
 
 ## Mar 4th, 2019
 
@@ -54,7 +59,7 @@ categories: Dairy
    12. [ ] Fourier transform of Gaussian Function
    13. [ ] $\boldsymbol{E}\{x_ix_jx_mx_m\}=\boldsymbol{E}(x_ix_j)\boldsymbol{E}(x_mx_n)+\boldsymbol{E}(x_ix_m)\boldsymbol{E}(x_jx_n)+\boldsymbol{E}(x_ix_n)\boldsymbol{E}(x_jx_m)=R_{ij}R_{mn}+R_{im}R{jn}+R_{in}R_{jm}$
 
-# Mar 6th
+## Mar 6th
 
 1. 读完Chap3 开始做作业
    1. Problem3.16 WSS的均值不变， $\frac{\partial\mu(\theta)}{\partial\theta}$
@@ -62,7 +67,7 @@ categories: Dairy
    3. P54 $k\Delta=k/(2B)$correspond to the zeros of the ACF of $w(t)$
 2. Kay Apendix1 关于Power Spectrum， Gaussian Random Processing的部分，尚不是很清晰。
 
-# Mar 7th
+## Mar 7th
 
 1. Kay P54 证明nyquist rate 下 sample $w[n]$是$r_{xx}[k] = 0 \,\text{if} \,  k \neq0$ 则可使用$(3.14)$?
 
@@ -121,13 +126,13 @@ categories: Dairy
    8. [ ] why not derivate the $|X(f)|$ term?
    9. [ ] What is $Pxx(f)$ ?
 
-# Mar 18th
+## Mar 18th
 
 1. 搭建了楼上的ubuntu环境
 2. 组会:主要完成的比较好的是 Fundamental of Statistical Signal Processing.凸优化上到了KKT条件,但是没有好好地理解.图论的课我一直有去上课,但是由于里面比较深入的部分用到了比较多的线性代数的知识,比如奇异值分解,奇异值向量.毕设方面我现在刚刚开题,还是想要好好地确定方向,想要知道现在实验室有没有什么主要的研究方向然后大家比较统一一点.
 3. 讨论中罗老师对于使用CNN会有问题产生了怀疑
 
-# Mar 19th
+## Mar 19th
 
 1. 和罗老师讨论了关于毕设的东西,我和罗老师提到了想要把人工的提取道路的形状信息,把车的位置表示为车道上的$n$维向量信息,再使用神经网络求解优化分配和控制的问题.罗老师提到了使用CNN更加general,如果以后加入行人等等也可以直接处理,但我觉得这样也沦为直接使用CNN求解.
 2. 也制定了主要的毕设路线,打算把毕业论文,对机器学习和深度学习写学习总结,实验部分从KDD开始入手写起,如果有精力再加入flow中multi-agent的部分
@@ -143,15 +148,99 @@ categories: Dairy
    5. [ ] proof for Neyman-Fisher Factorization theorem(Vector Parameter)
    6. [ ] proof for RLBS theorem(Vector Parameter)
 
-# Mar 20th
+## Mar 20th
 
 1. 装显卡
 2. 凸优化的课
 3. 做作业
 
-# Mar 21th
+## Mar 21th
 
 1. Antonio
 2. 机器学习
 3. 做完了第五章作业
    1. [ ] Rayleigh Distribution
+
+## Mar 22th
+
+## Mar 25th
+
+1. 写完了开题报告
+2. 学习了概率论的不等式
+3. 复习Network Theory and Analytics
+
+## Mar 26th
+
+1. 早上复习了Antonio的第二章的课件
+2. 上机器学习课
+
+## Mar 27th
+
+1. 凸优化
+2. 安装 TeX Live 2018
+
+## Mar28th
+
+1. 准备中心极限定理内容
+2. Antonio的课
+3. 机器学习---讲了MLE估计
+
+## Mar 29th
+
+1. Antonio的课---课后学习了课件
+2. 讲述了Central Limit Theorem，讲了两次，第二次的时候才发现在讲的时候有一些很重要的细节没有解释到位
+3. 详细推导了高斯分布的的傅里叶变换
+4. 使用beamer制作课件
+
+## Mar 31th
+
+1. 学习Antonio Network Theory and Analytics network inference的课件07 network process inference
+   1. [ ] MRFs equivalent to Gibbs random fields
+   2. [ ] Hammersley-Clifford theorem
+   3. [ ] auto model
+   4. [ ] homogeneity assumption , auto-logistic model and linearity P15
+2. 学习KTT condition
+3. 学习信号检测and做作业
+
+## Apr 1st
+
+1. Convex Optimization subgradient method
+
+## Apr 2nd
+
+1. Antonio - 流行病
+2. Machine learning -- accuracy
+
+## Apr 3rd
+
+1. Convex Optimization -- mirror descent
+2. Estimation -- Chapter 4
+   1. [ ] exercise
+   2. [ ] if the columns of $H$ are linearly independent, $H^T H$ is invertible.
+3. Estimation -- Chapter 6
+   1. [ ] what dose Lagrangian multipliers method find? Global or local minimum?
+
+## Apr 4th
+
+1. Read Estimation theory Chp6
+   1. [ ] if a random process is Gaussian ,then the autocorrelation data are certainly non-Gaussian P142
+2. Finish Estimation Theory Chpt6 problems
+   1. [ ] white noise are uncorrelated? P138 and Promblem 6.1 $w[n]$ is white noise if uncorrelated with same variance $\sigma^2$, uncorrelated noise with $\text{var}(w[n])=\sigma_n^2 $
+3. Estimation Bayesian Linear bayesian
+
+## Apr 7th
+
+1. Esitimation theory MLE
+   1. [ ] regularity condition
+   2. [ ] 7B rigorous proof of consistency
+   3. [ ] 7B asymptotic Gaussian property
+   4. [ ] Kullback-Leibler information
+
+
+## Apr 8th
+
+1. MLE
+2. Mechine learning : quasi-newton method
+   1. [ ] Frobenius norm
+   2. [ ] Woodbury formular
+   3. [ ] $\chi^{2}$distribution

@@ -13,7 +13,6 @@ blacklist nouveau
 
 sudo update-initramfs -u
 
-
 重启之后，可以查看nouveau有没有运行:
 
 lsmod | grep nouveau  # 没输出代表禁用生效
